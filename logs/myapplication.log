@@ -1,0 +1,492 @@
+2024-11-19T17:22:24.844+07:00  INFO 12480 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 12480 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:22:24.846+07:00  INFO 12480 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:22:24.878+07:00  INFO 12480 --- [productRedis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-19T17:22:24.878+07:00  INFO 12480 --- [productRedis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-19T17:22:25.327+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:22:25.328+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:22:25.431+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
+2024-11-19T17:22:25.443+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:22:25.444+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:22:25.454+07:00  INFO 12480 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:22:25.454+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:22:25.834+07:00  INFO 12480 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:22:25.843+07:00  INFO 12480 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:22:25.843+07:00  INFO 12480 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:22:25.884+07:00  INFO 12480 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:22:25.885+07:00  INFO 12480 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1007 ms
+2024-11-19T17:22:26.235+07:00  INFO 12480 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:22:26.255+07:00  INFO 12480 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-19T17:22:26.314+07:00  INFO 12480 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2c726f4b
+2024-11-19T17:22:26.315+07:00  INFO 12480 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-19T17:22:26.439+07:00 ERROR 12480 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+2024-11-19T17:22:26.439+07:00  WARN 12480 --- [productRedis] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+2024-11-19T17:22:26.440+07:00  INFO 12480 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-19T17:22:26.468+07:00  INFO 12480 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-19T17:22:26.471+07:00  INFO 12480 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-19T17:22:26.479+07:00  INFO 12480 --- [productRedis] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-19T17:22:26.491+07:00 ERROR 12480 --- [productRedis] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.ProductRedisApplication.main(ProductRedisApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+	at org.hibernate.jpa.event.internal.CallbackDefinitionResolverLegacyImpl.resolveEntityCallbacks(CallbackDefinitionResolverLegacyImpl.java:141)
+	at org.hibernate.boot.model.internal.EntityBinder.bindCallbacks(EntityBinder.java:1222)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:265)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+
+2024-11-19T17:22:53.878+07:00  INFO 20484 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 20484 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:22:53.880+07:00  INFO 20484 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:22:53.910+07:00  INFO 20484 --- [productRedis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-19T17:22:53.910+07:00  INFO 20484 --- [productRedis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-19T17:22:54.362+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:22:54.363+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:22:54.463+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2024-11-19T17:22:54.474+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:22:54.475+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:22:54.486+07:00  INFO 20484 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:22:54.486+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:22:54.867+07:00  INFO 20484 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:22:54.876+07:00  INFO 20484 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:22:54.876+07:00  INFO 20484 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:22:54.919+07:00  INFO 20484 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:22:54.919+07:00  INFO 20484 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2024-11-19T17:22:55.267+07:00  INFO 20484 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:22:55.287+07:00  INFO 20484 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-19T17:22:55.345+07:00  INFO 20484 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@273f25c
+2024-11-19T17:22:55.347+07:00  INFO 20484 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-19T17:22:55.470+07:00 ERROR 20484 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+2024-11-19T17:22:55.471+07:00  WARN 20484 --- [productRedis] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+2024-11-19T17:22:55.472+07:00  INFO 20484 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-19T17:22:55.506+07:00  INFO 20484 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-19T17:22:55.508+07:00  INFO 20484 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-19T17:22:55.517+07:00  INFO 20484 --- [productRedis] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-19T17:22:55.530+07:00 ERROR 20484 --- [productRedis] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.ProductRedisApplication.main(ProductRedisApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: Callback methods annotated in a listener bean class must return void and take one argument: jakarta.persistence.PreRemove - public void com.example.demo.utils.ProductListener.preRemove()
+	at org.hibernate.jpa.event.internal.CallbackDefinitionResolverLegacyImpl.resolveEntityCallbacks(CallbackDefinitionResolverLegacyImpl.java:141)
+	at org.hibernate.boot.model.internal.EntityBinder.bindCallbacks(EntityBinder.java:1222)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:265)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:399)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:259)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:281)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:324)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 20 common frames omitted
+
+2024-11-19T17:26:03.040+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:26:03.041+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:26:03.073+07:00  INFO 9144 --- [productRedis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-19T17:26:03.073+07:00  INFO 9144 --- [productRedis] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-19T17:26:03.531+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:26:03.533+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:26:03.635+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
+2024-11-19T17:26:03.646+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:26:03.647+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:26:03.657+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:26:03.657+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:26:04.038+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:26:04.046+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:26:04.047+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:26:04.089+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:26:04.089+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1016 ms
+2024-11-19T17:26:04.434+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:26:04.453+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-19T17:26:04.511+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@25abec48
+2024-11-19T17:26:04.513+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-19T17:26:05.256+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:26:05.420+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:26:05.475+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:26:05.504+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:26:05.523+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:26:05.546+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:26:05.678+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:26:05.704+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:26:05.714+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 2.998 seconds (process running for 3.479)
+2024-11-19T17:27:01.614+07:00  INFO 9144 --- [productRedis] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-19T17:27:01.615+07:00  INFO 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-19T17:27:01.615+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-19T17:27:01.615+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-19T17:27:01.615+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-19T17:27:01.616+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@178d8506
+2024-11-19T17:27:01.616+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@42d774ed
+2024-11-19T17:27:01.617+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-19T17:27:01.617+07:00  INFO 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-19T17:27:01.632+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/products?keyword&size=30&page=0", parameters={masked}
+2024-11-19T17:27:01.640+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controllers.ProductController#getAllProducts(String, int, int)
+2024-11-19T17:27:02.206+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-19T17:27:02.209+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=[ProductDto(name=Name 1000, price=100000.0, quantity=1010, imageUrl=Image URL 1000 (truncated)...]
+2024-11-19T17:27:02.219+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T17:27:08.711+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/products?keyword&size=30&page=0", parameters={masked}
+2024-11-19T17:27:08.711+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controllers.ProductController#getAllProducts(String, int, int)
+2024-11-19T17:27:08.749+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-19T17:27:08.749+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=[ProductDto(name=Name 1000, price=100000.0, quantity=1010, imageUrl=Image URL 1000 (truncated)...]
+2024-11-19T17:27:08.751+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T17:27:10.217+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/products?keyword&size=30&page=0", parameters={masked}
+2024-11-19T17:27:10.217+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controllers.ProductController#getAllProducts(String, int, int)
+2024-11-19T17:27:10.220+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-19T17:27:10.221+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=[ProductDto(name=Name 1000, price=100000.0, quantity=1010, imageUrl=Image URL 1000 (truncated)...]
+2024-11-19T17:27:10.222+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T17:27:11.401+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/products?keyword&size=30&page=0", parameters={masked}
+2024-11-19T17:27:11.402+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.controllers.ProductController#getAllProducts(String, int, int)
+2024-11-19T17:27:11.404+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-19T17:27:11.405+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=200, data=[ProductDto(name=Name 1000, price=100000.0, quantity=1010, imageUrl=Image URL 1000 (truncated)...]
+2024-11-19T17:27:11.406+07:00 DEBUG 9144 --- [productRedis] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T17:34:44.621+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-19T17:34:44.807+07:00  INFO 9144 --- [productRedis] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:34:44.809+07:00  INFO 9144 --- [productRedis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-19T17:34:44.812+07:00  INFO 9144 --- [productRedis] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-19T17:34:44.869+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:34:44.869+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:34:44.981+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:34:44.981+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:34:44.989+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-11-19T17:34:44.992+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:34:44.992+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:34:44.995+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:34:44.995+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:34:45.071+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:34:45.072+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:34:45.072+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:34:45.090+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:34:45.091+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2024-11-19T17:34:45.123+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:34:45.124+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-19T17:34:45.126+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@77e33801
+2024-11-19T17:34:45.127+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-19T17:34:45.167+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:34:45.209+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:34:45.226+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:34:45.236+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:34:45.243+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:34:45.247+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:34:45.306+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:34:45.315+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:34:45.318+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.473 seconds (process running for 523.106)
+2024-11-19T17:34:45.320+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:35:10.936+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-19T17:35:11.097+07:00  INFO 9144 --- [productRedis] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:35:11.097+07:00  INFO 9144 --- [productRedis] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-19T17:35:11.099+07:00  INFO 9144 --- [productRedis] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-19T17:35:11.151+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:35:11.151+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:35:11.266+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:35:11.266+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:35:11.273+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2024-11-19T17:35:11.275+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:35:11.275+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:35:11.278+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:35:11.278+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:35:11.338+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:35:11.339+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:35:11.339+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:35:11.357+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:35:11.357+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2024-11-19T17:35:11.386+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:35:11.387+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-19T17:35:11.389+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@2e2c07e
+2024-11-19T17:35:11.389+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-19T17:35:11.426+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:35:11.462+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:35:11.474+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:35:11.483+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:35:11.488+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:35:11.491+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:35:11.533+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:35:11.541+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:35:11.543+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.413 seconds (process running for 549.333)
+2024-11-19T17:35:11.546+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:37:48.786+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-19T17:37:48.957+07:00  INFO 9144 --- [productRedis] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:37:48.958+07:00  INFO 9144 --- [productRedis] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-19T17:37:48.961+07:00  INFO 9144 --- [productRedis] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-19T17:37:49.009+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:37:49.009+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:37:49.105+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:37:49.105+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:37:49.112+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-11-19T17:37:49.114+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:37:49.114+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:37:49.116+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:37:49.117+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:37:49.182+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:37:49.183+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:37:49.183+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:37:49.200+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:37:49.200+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2024-11-19T17:37:49.229+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:37:49.230+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-19T17:37:49.232+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@8147798
+2024-11-19T17:37:49.232+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-19T17:37:49.268+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:37:49.307+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:37:49.322+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:37:49.331+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:37:49.337+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:37:49.340+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:37:49.391+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:37:49.398+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:37:49.401+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.414 seconds (process running for 707.196)
+2024-11-19T17:37:49.402+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:38:17.104+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-19T17:38:17.276+07:00  INFO 9144 --- [productRedis] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:38:17.277+07:00  INFO 9144 --- [productRedis] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-19T17:38:17.280+07:00  INFO 9144 --- [productRedis] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-11-19T17:38:17.331+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:38:17.331+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:38:17.424+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:38:17.424+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:38:17.430+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-11-19T17:38:17.432+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:38:17.432+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:38:17.434+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:38:17.435+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:38:17.491+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:38:17.491+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:38:17.491+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:38:17.509+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:38:17.509+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 176 ms
+2024-11-19T17:38:17.535+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:38:17.536+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-11-19T17:38:17.539+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@4f0729af
+2024-11-19T17:38:17.539+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-11-19T17:38:17.569+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:38:17.603+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:38:17.615+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:38:17.623+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:38:17.628+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:38:17.630+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:38:17.669+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:38:17.677+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:38:17.680+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.369 seconds (process running for 735.476)
+2024-11-19T17:38:17.681+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:39:28.870+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T17:39:29.044+07:00  INFO 9144 --- [productRedis] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:39:29.044+07:00  INFO 9144 --- [productRedis] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-11-19T17:39:29.046+07:00  INFO 9144 --- [productRedis] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-11-19T17:39:29.095+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:39:29.097+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:39:29.203+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:39:29.203+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:39:29.209+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-11-19T17:39:29.212+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:39:29.212+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:39:29.214+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:39:29.214+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:39:29.278+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:39:29.278+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:39:29.279+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:39:29.296+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:39:29.296+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2024-11-19T17:39:29.328+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:39:29.328+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-11-19T17:39:29.331+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@307cb444
+2024-11-19T17:39:29.331+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-11-19T17:39:29.366+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:39:29.405+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:39:29.418+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:39:29.427+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:39:29.434+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:39:29.438+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:39:29.487+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:39:29.496+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:39:29.499+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.424 seconds (process running for 807.297)
+2024-11-19T17:39:29.500+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:39:32.932+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T17:39:33.104+07:00  INFO 9144 --- [productRedis] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:39:33.105+07:00  INFO 9144 --- [productRedis] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-11-19T17:39:33.106+07:00  INFO 9144 --- [productRedis] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-11-19T17:39:33.154+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:39:33.154+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:39:33.248+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:39:33.248+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:39:33.254+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-11-19T17:39:33.256+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:39:33.256+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:39:33.258+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:39:33.259+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:39:33.314+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:39:33.315+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:39:33.315+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:39:33.342+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:39:33.342+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2024-11-19T17:39:33.369+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:39:33.370+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-11-19T17:39:33.371+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@4b70c53f
+2024-11-19T17:39:33.371+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-11-19T17:39:33.402+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:39:33.432+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:39:33.443+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:39:33.452+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:39:33.456+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:39:33.459+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:39:33.495+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:39:33.502+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:39:33.505+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.369 seconds (process running for 811.303)
+2024-11-19T17:39:33.506+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:40:32.614+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T17:40:32.788+07:00  INFO 9144 --- [productRedis] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:32.788+07:00  INFO 9144 --- [productRedis] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-11-19T17:40:32.790+07:00  INFO 9144 --- [productRedis] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-11-19T17:40:32.837+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:40:32.837+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:40:32.928+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:40:32.928+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:40:32.934+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-11-19T17:40:32.936+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:40:32.936+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:40:32.938+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:40:32.938+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:40:32.990+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:40:32.990+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:40:32.990+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:40:33.007+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:40:33.007+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 168 ms
+2024-11-19T17:40:33.033+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:40:33.034+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-11-19T17:40:33.036+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@4281ae49
+2024-11-19T17:40:33.036+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-11-19T17:40:33.068+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:33.098+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:40:33.109+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:40:33.117+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:40:33.122+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:40:33.124+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:40:33.161+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:40:33.168+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:40:33.172+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.352 seconds (process running for 870.972)
+2024-11-19T17:40:33.173+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:40:42.679+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T17:40:42.851+07:00  INFO 9144 --- [productRedis] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:42.852+07:00  INFO 9144 --- [productRedis] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-11-19T17:40:42.854+07:00  INFO 9144 --- [productRedis] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-11-19T17:40:42.898+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:40:42.898+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:40:42.985+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:40:42.985+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:40:42.992+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-11-19T17:40:42.994+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:40:42.994+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:40:42.996+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:40:42.996+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:40:43.048+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:40:43.048+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:40:43.048+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:40:43.065+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:40:43.065+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 166 ms
+2024-11-19T17:40:43.090+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:40:43.091+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-11-19T17:40:43.093+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@5169eb6e
+2024-11-19T17:40:43.093+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-11-19T17:40:43.122+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:43.152+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:40:43.163+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:40:43.171+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:40:43.176+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:40:43.178+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:40:43.215+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:40:43.222+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:40:43.225+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.342 seconds (process running for 881.026)
+2024-11-19T17:40:43.226+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:40:50.713+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T17:40:50.884+07:00  INFO 9144 --- [productRedis] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:50.885+07:00  INFO 9144 --- [productRedis] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-11-19T17:40:50.886+07:00  INFO 9144 --- [productRedis] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-11-19T17:40:50.932+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Starting ProductRedisApplication using Java 17.0.11 with PID 9144 (D:\21136181_LeThanhAn_WWW_Ws\productRedis\target\classes started by ADMIN in D:\21136181_LeThanhAn_WWW_Ws\productRedis)
+2024-11-19T17:40:50.932+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T17:40:51.021+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:40:51.021+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T17:40:51.027+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-11-19T17:40:51.029+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-19T17:40:51.029+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-19T17:40:51.031+07:00  INFO 9144 --- [productRedis] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-19T17:40:51.031+07:00  INFO 9144 --- [productRedis] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-11-19T17:40:51.083+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-19T17:40:51.084+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T17:40:51.084+07:00  INFO 9144 --- [productRedis] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T17:40:51.101+07:00  INFO 9144 --- [productRedis] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-19T17:40:51.102+07:00  INFO 9144 --- [productRedis] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2024-11-19T17:40:51.127+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T17:40:51.128+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-11-19T17:40:51.130+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@4facaa97
+2024-11-19T17:40:51.130+07:00  INFO 9144 --- [productRedis] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-11-19T17:40:51.159+07:00  INFO 9144 --- [productRedis] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:51.191+07:00  WARN 9144 --- [productRedis] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T17:40:51.202+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-11-19T17:40:51.210+07:00 DEBUG 9144 --- [productRedis] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-19T17:40:51.216+07:00 DEBUG 9144 --- [productRedis] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T17:40:51.218+07:00 DEBUG 9144 --- [productRedis] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T17:40:51.255+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T17:40:51.263+07:00  INFO 9144 --- [productRedis] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-19T17:40:51.268+07:00  INFO 9144 --- [productRedis] [restartedMain] c.example.demo.ProductRedisApplication   : Started ProductRedisApplication in 0.353 seconds (process running for 889.069)
+2024-11-19T17:40:51.269+07:00  INFO 9144 --- [productRedis] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T17:40:58.746+07:00  INFO 9144 --- [productRedis] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T17:40:58.906+07:00  INFO 9144 --- [productRedis] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T17:40:58.907+07:00  INFO 9144 --- [productRedis] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-11-19T17:40:58.908+07:00  INFO 9144 --- [productRedis] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
